@@ -9,7 +9,7 @@ export default function Home({ threads }) {
                 <div className="container">
                     <div className="w-full lg:w-2/3">
                         <h1 className="font-bold text-black tracking-tighter text-xl sm:text-3xl lg:text-6xl">
-                            Forum <span className="text-blue-600">Developer</span>
+                            Forum <span className="text-blue-600">Multimedia</span>
                         </h1>
                         <p className="leading-normal md:leading-relaxed text-base sm:text-xl mt-2 lg:mt-4 mb-4 text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel doloremque magnam quasi magni, provident quisquam optio fugiat asperiores nemo maxime cumque accusamus incidunt quia ratione saepe architecto exercitationem cupiditate ipsa expedita reprehenderit corrupti beatae, facere, porro harum? Ab, autem doloremque.</p>
                         <div className="flex items-center justify-center sm:justify-start gap-x-2">

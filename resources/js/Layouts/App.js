@@ -12,7 +12,7 @@ export default function App({ title, children }) {
             <footer className="border-t py-8 lg:py-16 mt-16 bg-white">
                 <div className="container">
                     <div className="text-center">
-                        &copy; 2021 Forum
+                        &copy; 2024 Forum
                     </div>
                 </div>
             </footer>

@@ -1,4 +1,4 @@
-# Laravel Forum Music App
+# Laravel/ReactJS Forum Multimedia
 
 ## Introduction
 

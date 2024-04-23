@@ -13,8 +13,8 @@ export default function Home({ threads }) {
                         </h1>
                         <p className="leading-normal md:leading-relaxed text-base sm:text-xl mt-2 lg:mt-4 mb-4 text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel doloremque magnam quasi magni, provident quisquam optio fugiat asperiores nemo maxime cumque accusamus incidunt quia ratione saepe architecto exercitationem cupiditate ipsa expedita reprehenderit corrupti beatae, facere, porro harum? Ab, autem doloremque.</p>
                         <div className="flex items-center justify-center sm:justify-start gap-x-2">
-                            <Link className="w-44 transition duration-200 text-center rounded-lg bg-blue-600 hover:bg-blue-700 text-white shadow hover:shadow-md py-2.5 font-semibold" href="/threads">Browse</Link>
-                            <Link className="w-44 transition duration-200 text-center rounded-lg bg-orange-500 hover:bg-orange-600 text-white shadow hover:shadow-md py-2.5 font-semibold" href="/threads">Popular Threads</Link>
+                            <Link className="w-44 transition duration-200 text-center rounded-lg bg-blue-600 hover:bg-blue-700 text-white shadow hover:shadow-md py-2.5 font-semibold" href="/login">Browse</Link>
+                            <Link className="w-44 transition duration-200 text-center rounded-lg bg-orange-500 hover:bg-orange-600 text-white shadow hover:shadow-md py-2.5 font-semibold" href="/login">Popular Threads</Link>
                         </div>
                     </div>
                 </div>
@@ -25,7 +25,7 @@ export default function Home({ threads }) {
                     Latest
                 </h1>
                 <div className="grid grid-cols-3 gap-10">
-                    {threads.map((thread, index) => (
+                    {threads && threads.map((thread, index) => (
                         <div key={index} className="bg-white rounded-2xl shadow hover:shadow-lg transition-shadow duration-200 p-6">
                             <Link className="py-1 px-3 text-xs font-semibold bg-gray-800 text-gray-50 rounded-full" href={`/threads?category=${thread.category.slug}`}>
                                 {thread.category.name}

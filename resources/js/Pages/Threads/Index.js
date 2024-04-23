@@ -24,6 +24,7 @@ const menus = [
 ];
 
 const ThreadSetting = ({ thread }) => {
+    
     return (
         <Menu as="div" className='relative'>
             <Menu.Button>

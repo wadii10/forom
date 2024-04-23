@@ -7233,11 +7233,11 @@ function Home(_ref) {
             className: "flex items-center justify-center sm:justify-start gap-x-2",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
               className: "w-44 transition duration-200 text-center rounded-lg bg-blue-600 hover:bg-blue-700 text-white shadow hover:shadow-md py-2.5 font-semibold",
-              href: "/threads",
+              href: "/login",
               children: "Browse"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
               className: "w-44 transition duration-200 text-center rounded-lg bg-orange-500 hover:bg-orange-600 text-white shadow hover:shadow-md py-2.5 font-semibold",
-              href: "/threads",
+              href: "/login",
               children: "Popular Threads"
             })]
           })]
@@ -7250,7 +7250,7 @@ function Home(_ref) {
         children: "Latest"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
         className: "grid grid-cols-3 gap-10",
-        children: threads.map(function (thread, index) {
+        children: threads && threads.map(function (thread, index) {
           return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
             className: "bg-white rounded-2xl shadow hover:shadow-lg transition-shadow duration-200 p-6",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {

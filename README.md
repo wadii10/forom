@@ -4,7 +4,6 @@
 
 Bienvenue sur l'application de forum multimedia, une plateforme communautaire dédiée au partage et à la discussion de votre sujet préférée. Cette application permet aux utilisateurs de créer des discussions, d'explorer différentes catégories, de rechercher des sujets spécifiques et de gérer leurs activités via des tableaux de bord personnalisés.
 
-![mockup-0](https://github.com/aldiandarwin/forum-app/assets/70283015/ca0a4718-149e-4651-9237-dd5cb1bb1e69)
 
 ## Fonctionnalités
 

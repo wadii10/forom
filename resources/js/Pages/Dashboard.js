@@ -2,7 +2,18 @@ import Hero from '@/Components/Hero';
 import App from '@/Layouts/App';
 import React from 'react';
 
-export default function Dashboard() {
+export default function Dashboard(props) {
+    const { data: threads, meta } = props.threads;
+
+
+    const reload = useCallback(
+        debounce((q) => {
+            Inertia.get('/threads', pickBy({ search: q, page: filter.page, filtered: filter.filtered, category: filter.category }), { preserveState: true });
+        }, 500)
+        , []);
+
+    useEffect(() => reload(keyword), [keyword]);
+
     return (
         <Hero>
             <div className="container">

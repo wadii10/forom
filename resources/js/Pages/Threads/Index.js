@@ -55,6 +55,7 @@ export default function Index(props) {
         , []);
 
     useEffect(() => reload(keyword), [keyword]);
+    
     return (
         <div className="space-y-4">
             <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 w-full">

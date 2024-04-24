@@ -7170,7 +7170,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function Dashboard() {
+function Dashboard(props) {
+  var _props$threads = props.threads,
+      threads = _props$threads.data,
+      meta = _props$threads.meta;
+  var reload = useCallback(debounce(function (q) {
+    Inertia.get('/threads', pickBy({
+      search: q,
+      page: filter.page,
+      filtered: filter.filtered,
+      category: filter.category
+    }), {
+      preserveState: true
+    });
+  }, 500), []);
+  useEffect(function () {
+    return reload(keyword);
+  }, [keyword]);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Components_Hero__WEBPACK_IMPORTED_MODULE_0__["default"], {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "container",
